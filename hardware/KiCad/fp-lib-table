@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "Connector_Samtec_HLE_SMD-ML")(type "KiCad")(uri "${KIPRJMOD}/3rd-party/footprints/Connector_Samtec_HLE_SMD-ML.pretty")(options "")(descr ""))
+  (lib (name "ZXBUS")(type "KiCad")(uri "${KIPRJMOD}/3rd-party/footprints/zxbus.pretty")(options "")(descr ""))
+)

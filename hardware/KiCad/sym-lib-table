@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "Connector-ML")(type "Legacy")(uri "${KIPRJMOD}/3rd-party/symbols/Connector-ML.lib")(options "")(descr ""))
+  (lib (name "ZXSYM")(type "KiCad")(uri "${KIPRJMOD}/3rd-party/symbols/zxbus.kicad_sym")(options "")(descr ""))
+)
