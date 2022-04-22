@@ -1,66 +1,66 @@
 # ZX Spectrum edge net
     # ZX Address bus
-    net ZX_ADDR<0> loc=p36;
-    net ZX_ADDR<1> loc=p38;
-    net ZX_ADDR<2> loc=p39;
-    net ZX_ADDR<3> loc=p40;
-    net ZX_ADDR<4> loc=p51;
-    net ZX_ADDR<5> loc=p50;
-    net ZX_ADDR<6> loc=p49;
-    net ZX_ADDR<7> loc=p48;
-    net ZX_ADDR<8> loc=p18;
-    net ZX_ADDR<9> loc=p57;
-    net ZX_ADDR<10> loc=p19;
-    net ZX_ADDR<11> loc=p58;
-    net ZX_ADDR<12> loc=p34;
-    net ZX_ADDR<13> loc=p60;
-    net ZX_ADDR<14> loc=p33;
-    net ZX_ADDR<15> loc=p59;
+    net ZX_ADDR<0> loc=p34;
+    net ZX_ADDR<1> loc=p35;
+    net ZX_ADDR<2> loc=p36;
+    net ZX_ADDR<3> loc=p38;
+    net ZX_ADDR<4> loc=p48;
+    net ZX_ADDR<5> loc=p47;
+    net ZX_ADDR<6> loc=p46;
+    net ZX_ADDR<7> loc=p45;
+    net ZX_ADDR<8> loc=p13;
+    net ZX_ADDR<9> loc=p51;
+    net ZX_ADDR<10> loc=p18;
+    net ZX_ADDR<11> loc=p52;
+    net ZX_ADDR<12> loc=p32;
+    net ZX_ADDR<13> loc=p57;
+    net ZX_ADDR<14> loc=p31;
+    net ZX_ADDR<15> loc=p56;
 
     # ZX DATA bus
-    net ZX_DATA<0> loc=p63;
-    net ZX_DATA<1> loc=p64;
-    net ZX_DATA<2> loc=p01;
-    net ZX_DATA<3> loc=p05;
-    net ZX_DATA<4> loc=p06;
-    net ZX_DATA<5> loc=p04;
-    net ZX_DATA<6> loc=p02;
-    net ZX_DATA<7> loc=p61;
+    net ZX_DATA<0> loc=p60;
+    net ZX_DATA<1> loc=p61;
+    net ZX_DATA<2> loc=p62;
+    net ZX_DATA<3> loc=p02;
+    net ZX_DATA<4> loc=p04;
+    net ZX_DATA<5> loc=p01;
+    net ZX_DATA<6> loc=p63;
+    net ZX_DATA<7> loc=p58;
 
     # ZX Control lines
-    net ZX_CK loc=p35;
-    net ZX_M1 loc=p16;
-    net ZX_MREQ loc=p10;
-    net ZX_IORQ loc=p11;
-    net ZX_RD loc=p12;
-    net ZX_WR loc=p13;
+    net ZX_CK loc=p33;
+    net ZX_M1 loc=p11;
+    net ZX_MREQ loc=p15;
+    net ZX_IORQ loc=p16;
+    net ZX_RD loc=p08;
+    net ZX_WR loc=p09;
 
-    net ZX_INT loc=p07;
-    net ZX_NMI loc=p08;
-    net ZX_HALT loc=p09;
-    net ZX_WAIT loc=p15;
-    net ZX_RFSH loc=p17;
-    net ZX_RESET loc=p47;
-    net ZX_BUSRQ loc=p46;
-    net ZX_BUSACK loc=p56;
+    net ZX_INT loc=p05;
+    net ZX_NMI loc=p06;
+    net ZX_HALT loc=p07;
+    net ZX_WAIT loc=p10;
+    net ZX_RFSH loc=p12;
+    net ZX_RESET loc=p64;
+    net ZX_BUSRQ loc=p44;
+    net ZX_BUSACK loc=p50;
 
     # 16K/48K/128K specific
-    net ZX_ROMCS loc=p52;
+    net ZX_ROMCS loc=p49;
 
     # +2A/2B, +3/3B specific
-    net ZX_ROMCS1 loc=p62;
-    net ZX_ROMCS2 loc=p42;
-    net ZX_DRD loc=p43;
-    net ZX_DWR loc=p44;
-    net ZX_MTR loc=p45;
+    net ZX_ROMCS1 loc=p59;
+    net ZX_ROMCS2 loc=p39;
+    net ZX_DRD loc=p40;
+    net ZX_DWR loc=p42;
+    net ZX_MTR loc=p43;
 
 #RPi0 net
-    net PI_CK loc=p27;
-    net PI_CE0 loc=p25;
-    net PI_MOSI loc=p32;
-    net PI_MISO loc=p31;
+    net PI_CK loc=p17;
+    net PI_CE0 loc=p24;
+    net PI_MOSI loc=p25;
+    net PI_MISO loc=p27;
 
     net PI_GPIO1 loc=p20;
     net PI_GPIO2 loc=p22;
     net PI_GPIO3 loc=p23;
-    net PI_GPIO4 loc=p24;
+    net PI_GPIO4 loc=p19;
