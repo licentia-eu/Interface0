@@ -9,6 +9,7 @@
     (date "2022-04-13")
     (rev "3.1")
     (company "https://zx.licentia.eu")
+    (comment 1 "Raspberry PI 0 (2) base ZX Interface")
   )
 
   (lib_symbols
@@ -2357,7 +2358,7 @@
     (property "Value" "22uF" (id 1) (at 181.61 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (id 2) (at 182.88 88.9 0)
+    (property "Footprint" "Capacitor_THT:CP_Radial_Tantal_D7.0mm_P2.50mm" (id 2) (at 182.88 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 182.88 88.9 0)
@@ -2688,7 +2689,7 @@
       (reference "#PWR0125") (unit 1) (value "+12V") (footprint "")
     )
     (path "/49d32279-5a88-4fad-a526-fb238ce9f4dc"
-      (reference "C1") (unit 1) (value "22uF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+      (reference "C1") (unit 1) (value "22uF") (footprint "Capacitor_THT:CP_Radial_Tantal_D7.0mm_P2.50mm")
     )
     (path "/bbb04a5e-7369-45f7-b462-9bd277c4027f"
       (reference "C2") (unit 1) (value "100nF") (footprint "Capacitor_THT:CP_Radial_Tantal_D5.0mm_P2.50mm")
