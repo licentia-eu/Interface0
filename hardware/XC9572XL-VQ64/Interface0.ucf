@@ -12,9 +12,9 @@
     net ZX_ADDR<9> loc=p51;
     net ZX_ADDR<10> loc=p18;
     net ZX_ADDR<11> loc=p52;
-    net ZX_ADDR<12> loc=p32;
+    net ZX_ADDR<12> loc=p33;
     net ZX_ADDR<13> loc=p57;
-    net ZX_ADDR<14> loc=p31;
+    net ZX_ADDR<14> loc=p32;
     net ZX_ADDR<15> loc=p56;
 
     # ZX DATA bus
@@ -28,18 +28,18 @@
     net ZX_DATA<7> loc=p58;
 
     # ZX Control lines
-    net ZX_CK loc=p33;
+    net ZX_CK loc=p15;
     net ZX_M1 loc=p11;
-    net ZX_MREQ loc=p15;
-    net ZX_IORQ loc=p16;
+    net ZX_MREQ loc=p07;
+    net ZX_IORQ loc=p12;
     net ZX_RD loc=p08;
     net ZX_WR loc=p09;
 
     net ZX_INT loc=p05;
     net ZX_NMI loc=p06;
-    net ZX_HALT loc=p07;
+    net ZX_HALT loc=p20;
     net ZX_WAIT loc=p10;
-    net ZX_RFSH loc=p12;
+    net ZX_RFSH loc=p19;
     net ZX_RESET loc=p64;
     net ZX_BUSRQ loc=p44;
     net ZX_BUSACK loc=p50;
@@ -55,12 +55,12 @@
     net ZX_MTR loc=p43;
 
 #RPi0 net
-    net PI_CK loc=p17;
-    net PI_CE0 loc=p24;
+    net PI_CK loc=p16;
+    net PI_CE0 loc=p17;
     net PI_MOSI loc=p25;
     net PI_MISO loc=p27;
 
-    net PI_GPIO1 loc=p20;
-    net PI_GPIO2 loc=p22;
+    net PI_GPIO1 loc=p22;
+    net PI_GPIO2 loc=p24;
     net PI_GPIO3 loc=p23;
-    net PI_GPIO4 loc=p19;
+    net PI_GPIO4 loc=p31;
