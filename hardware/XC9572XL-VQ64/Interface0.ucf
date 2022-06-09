@@ -52,11 +52,11 @@
 
     net PI_IO_CLK   loc=p17;
     net PI_IO       loc=p22;
-    net PI_MISO     loc=p25;
+    net PI_MISO     loc=p23;
     net PI_MOSI     loc=p27;
 
     net PI_GPIO1 loc=p24;
-    net PI_GPIO2 loc=p23;
+    net PI_GPIO2 loc=p25;
     net PI_GPIO3 loc=p31;
     net PI_GPIO4 loc=p20;
     net PI_GPIO5 loc=p19;
