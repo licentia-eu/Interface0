@@ -27,17 +27,17 @@
     net ZX_DATA<7> loc=p58;
     # ZX Control lines
     net ZX_CLK loc=p15;
-    net ZX_M1 loc=p11;
-    net ZX_MREQ loc=p07;
-    net ZX_IORQ loc=p12;
-    net ZX_RD loc=p08;
-    net ZX_WR loc=p09;
-    net ZX_INT loc=p05;
+    net ZX_M1_n loc=p11;
+    net ZX_MREQ_n loc=p07;
+    net ZX_IORQ_n loc=p12;
+    net ZX_RD_n loc=p08;
+    net ZX_WR_n loc=p09;
+    net ZX_INT_n loc=p05;
     net ZX_NMI loc=p06;
-    net ZX_WAIT loc=p10;
-    net ZX_RESET loc=p64;
-    net ZX_BUSRQ loc=p44;
-    net ZX_BUSACK loc=p50;
+    net ZX_WAIT_n loc=p10;
+    net ZX_RESET_n loc=p64;
+    net ZX_BUSRQ_n loc=p44;
+    net ZX_BUSACK_n loc=p50;
     # 16K/48K/128K specific
     net ZX_ROMCS loc=p49;
     # +2A/2B, +3/3B specific
@@ -50,13 +50,33 @@
 #RPi0 net
     net PI_MASTER_CLK loc=p16;
 
-    net PI_IO_CLK   loc=p17;
-    net PI_IO       loc=p22;
-    net PI_MISO     loc=p23;
-    net PI_MOSI     loc=p27;
+    net SPI_CLK   loc=p17;
+    net SPI_CS_n       loc=p22;
+    net SPI_MISO     loc=p23;
+    net SPI_MOSI     loc=p27;
 
     net PI_GPIO1 loc=p24;
     net PI_GPIO2 loc=p25;
     net PI_GPIO3 loc=p31;
     net PI_GPIO4 loc=p20;
-    net PI_GPIO5 loc=p19;
+    net PI_RESET loc=p19;
+
+# Xilinx CPLD specific
+  net PI_MASTER_CLK BUFG=CLK;
+
+  net ZX_RESET_n BUFG=SR;
+
+  net ZX_RESET_n SLOW;
+  net ZX_NMI    SLOW;
+
+  net ZX_CLK    FAST;
+  net ZX_M1_n   FAST;
+  net ZX_MREQ_n FAST;
+  net ZX_IORQ_n FAST;
+  net ZX_RD_n   FAST;
+  net ZX_WR_n   FAST;
+
+  net SPI_CLK   FAST;
+  net SPI_CS_n  FAST;
+  net SPI_MISO  FAST;
+  net SPI_MOSI  FAST;
