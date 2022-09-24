@@ -15,14 +15,13 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-`define ROMCS_CMD   6'b0001
-`define RESET_CMD   6'b0010
-`define NMI_CMD     6'b0100
-`define CMDS        6'b1000
+`define IDLE        16'hffff
 
-`define RESET_COUNT 3'b111
+`define EMPTY_CMD   16'h0200
+`define ROMCS_CMD   16'h8200
+`define NMI_CMD     16'h4200
+`define BYTE_CMD    16'h0100
 
-`define bZX_CMD       16'd31
-// MISO commands
-`define bZX_WR        4'b1001
-`define bZX_RD        4'b1000
+`define bZX_CMD     16'd31
+`define NMI_ADDR    16'h0066
+
